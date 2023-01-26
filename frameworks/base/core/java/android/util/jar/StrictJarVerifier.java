@@ -147,7 +147,7 @@ class StrictJarVerifier {
          */
         void verify() {
             byte[] d = digest.digest();
-            //add
+            //add //mikrom
             /*if (!verifyMessageDigest(d, hash)) {
                 throw invalidDigest(JarFile.MANIFEST_NAME, name, name);
             }*/
