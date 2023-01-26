@@ -2135,7 +2135,6 @@ class JNI {
       std::string error =
           android::base::StringPrintf("NewStringUTF input has 2^31 or more characters: %zu",
                                       utf16_length);
-
       ScopedObjectAccess soa(env);
       ShowArgStr(__FUNCTION__,utf,nullptr);
       soa.Self()->ThrowOutOfMemoryError(error.c_str());

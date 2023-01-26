@@ -883,6 +883,7 @@ art_cc_test {
         "art_standalone_gtest_defaults",
         "art_runtime_tests_defaults",
     ],
+    data: [":generate-boot-image"],
     target: {
         host: {
             required: ["dex2oat"],
@@ -936,6 +937,7 @@ art_cc_test {
         "art_standalone_gtest_defaults",
         "art_runtime_compiler_tests_defaults",
     ],
+    data: [":generate-boot-image"],
     shared_libs: [
         "libart-compiler",
     ],

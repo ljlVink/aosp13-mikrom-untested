@@ -339,7 +339,6 @@ static inline JValue Execute(
   // Lock counting is a special version of accessibility checks, and for simplicity and
   // reduction of template parameters, we gate it behind access-checks mode.
   DCHECK_IMPLIES(method->SkipAccessChecks(), !method->MustCountLocks());
-  //顶上函数名变了-自己对去
   //add
   if((result_register.GetI()==111111)){
     return ExecuteSwitchImpl<false, false>(self, accessor, shadow_frame, result_register,false);
